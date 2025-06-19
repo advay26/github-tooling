@@ -19,8 +19,7 @@ configuration:
               label: testing
         then:
           - addReply:
-              reply: "@${issueAuthor}, please add a Bug/Feature/SupportRequest label as
-                applicable."
+              reply: "@${issueAuthor}, please add a Bug/Feature/SupportRequest label as applicable."
           - addLabel:
               label: waitingForCustomer
           - addLabel:
@@ -34,8 +33,7 @@ configuration:
               label: testing
         then:
           - addReply:
-              reply: "@${issueAuthor}, please add a Bug/Feature/SupportRequest label as
-                applicable."
+              reply: "@${issueAuthor}, please add a Bug/Feature/SupportRequest label as applicable."
           - addLabel:
               label: waitingForCustomer
           - addLabel:
