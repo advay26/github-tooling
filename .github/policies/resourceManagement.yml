@@ -19,8 +19,21 @@ configuration:
               label: testing
         then:
           - addReply:
-              reply: "@${issueAuthor}, please add a Bug/Feature/SupportRequest label as
-                applicable."
+              reply: "@${issueAuthor}, please add a Bug/Feature/SupportRequest label as applicable."
+          - addLabel:
+              label: waitingForCustomer
+          - addLabel:
+              label: untriaged
+      - description: Check if a new testing label was assigned to the issue
+        triggerOnOwnActions: false
+        if:
+          - payloadType: Issues
+          - isOpen
+          - labelAdded:
+              label: testing
+        then:
+          - addReply:
+              reply: "@${issueAuthor}, please add a Bug/Feature/SupportRequest label as applicable."
           - addLabel:
               label: waitingForCustomer
           - addLabel:
