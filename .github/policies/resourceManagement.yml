@@ -16,7 +16,7 @@ configuration:
           - isAction:
               action: Opened
           - hasLabel:
-              label: Bug
+              label: testing
         then:
           - addReply:
               reply: "@${issueAuthor}, please add a Bug/Feature/SupportRequest label as
