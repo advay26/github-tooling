@@ -25,7 +25,7 @@ configuration:
               label: waitingForCustomer
           - addLabel:
               label: untriaged
-      - description: Check if a Type label is assigned to new issues
+      - description: Check if a new testing label was assigned to the issue
         triggerOnOwnActions: false
         if:
           - payloadType: Issues
